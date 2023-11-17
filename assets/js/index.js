@@ -133,10 +133,11 @@ if (document.querySelector(".gallery-popup .gallery-thumbnail-item img")) {
 const swiperTopbar = new Swiper(".header-topbar-slider", {
   loop: true,
   speed: 1000,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  slidesPerView: 1,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 const swiperRelated = new Swiper(".related-slider", {

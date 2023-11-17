@@ -1,23 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@font-face {
-  font-family: "ITC";
-  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Book.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ITC";
-  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ITC";
-  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+@import "../assets/fonts/Manrope/";
 .contact {
   margin-top: 58px;
   margin-bottom: 148px;

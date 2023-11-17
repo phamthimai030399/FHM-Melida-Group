@@ -1,8 +1,8 @@
 const swiperSlider = new Swiper(".slider-container", {
   loop: true,
-  speed: 1000,
+  speed: 1500,
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -14,7 +14,7 @@ const swiperSlider = new Swiper(".slider-container", {
 const swiperBestSeller = new Swiper(".justin-slider", {
   direction: "horizontal",
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 15,
   speed: 800,
   autoplay: {
     delay: 2000,
@@ -23,16 +23,16 @@ const swiperBestSeller = new Swiper(".justin-slider", {
   breakpoints: {
     480: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
-    768: {
+    767: {
       slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 35,
     },
-    992: {
+    991: {
       autoplay: false,
       slidesPerView: 4,
-      spaceBetween: 26,
+      spaceBetween: 50,
     },
   },
   navigation: {
@@ -86,11 +86,11 @@ const swiperTestimonials = new Swiper(".testimonials-slider", {
     320: {
       slidesPerView: 1,
     },
-    768: {
+    767: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    992: {
+    991: {
       autoplay: false,
       slidesPerView: 3,
       spaceBetween: 43,
