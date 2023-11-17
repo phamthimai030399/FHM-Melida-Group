@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.contact {
+  margin-top: 58px;
+  margin-bottom: 148px;
+}
+@media only screen and (max-width: 991px) {
+  .contact {
+    margin-bottom: 100px;
+  }
+}
+.contact .contact-form .contact-form-heading {
+  margin-top: 52px;
+  margin-bottom: 25px;
+}
+.contact .contact-form .contact-form-heading p,
+.contact .contact-form .contact-form-heading span {
+  font-weight: 300;
+  font-size: 14px;
+}
+.contact .contact-form .contact-form-submit {
+  margin-top: 50px;
+}
+
+.address {
+  margin-bottom: 148px;
+}
+@media only screen and (max-width: 991px) {
+  .address {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .address {
+    margin-bottom: 50px;
+  }
+}
+.address .address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  .address .address-container {
+    flex-direction: column-reverse;
+  }
+}
+.address .address-info {
+  max-width: 362px;
+}
+.address .address-info .address-info-item {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .address .address-info .address-info-item {
+    margin-bottom: 20px;
+  }
+}
+.address .address-info .address-info-item h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.address .address-info .address-info-item a {
+  text-decoration: underline;
+}
+.address .address-info .address-info-item p,
+.address .address-info .address-info-item a {
+  font-size: 16px;
+  font-weight: 300;
+}
+.address .address-frame {
+  width: 50%;
+  aspect-ratio: 580/315;
+}
+@media only screen and (max-width: 991px) {
+  .address .address-frame {
+    aspect-ratio: 580/450;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .address .address-frame {
+    width: 100%;
+    aspect-ratio: 580/315;
+    margin-bottom: 30px;
+  }
+}
+.address .address-frame iframe {
+  width: 100%;
+  height: 100%;
+}

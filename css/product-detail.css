@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.tabs {
+  margin-top: 50px;
+  margin-bottom: 81px;
+}
+.tabs .tabs-list {
+  gap: 60px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .tabs .tabs-list {
+    overflow-x: auto;
+  }
+}
+.tabs .tabs-list .tabs-item {
+  cursor: pointer;
+}
+.tabs .tabs-list .tabs-item.active .text {
+  color: #000000;
+  border-bottom-color: #000000;
+  font-weight: 800;
+}
+.tabs .tabs-list .tabs-item .text {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #616161;
+  border-bottom: 3px solid transparent;
+  transition: all ease 0.5s;
+  white-space: nowrap;
+}
+.tabs .tabs-content {
+  max-width: 1061px;
+  width: 100%;
+}
+.tabs .tabs-content .paragraph {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.tabs .tabs-content .paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.review {
+  margin-top: 92px;
+  margin-bottom: 97px;
+}
+.review .review-heading {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 32px;
+}
+.review .review-heading h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.review .review-heading h5::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  display: block;
+  background-color: #000000;
+}
+.review .review-heading span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.review .review-container {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 35px;
+  max-width: 660px;
+  margin-bottom: 36px;
+}
+@media only screen and (max-width: 991px) {
+  .review .review-container {
+    max-width: none;
+  }
+}
+.review .review-container .review-btn {
+  float: right;
+  text-align: end;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.review .review-content {
+  margin-top: 53px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-content {
+    flex-direction: column;
+  }
+}
+.review .review-star {
+  padding-left: 33px;
+  padding-right: 65px;
+}
+.review .review-star h2 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.review .review-star svg {
+  margin-bottom: 10px;
+}
+.review .review-star h6 {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.review .review-rate {
+  width: 100%;
+  padding-left: 50px;
+  border-left: 1px solid #f2f2f2;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-rate {
+    border: 0;
+    padding-left: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.review .review-rate .review-rate-item {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 2px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media only screen and (max-width: 480px) {
+  .review .review-rate .review-rate-item {
+    gap: 10px;
+  }
+}
+.review .review-rate .review-rate-item span {
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 9px;
+}
+.review .review-rate .review-rate-item .review-rate-line {
+  display: block;
+  width: 248px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.review .review-rate .review-rate-item .review-rate-line.review-rate-line-90::after {
+  content: "";
+  width: 218px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.review .review-comments {
+  max-width: 660px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 34px 34px 32px 20px;
+}
+@media only screen and (max-width: 991px) {
+  .review .review-comments {
+    max-width: none;
+    padding: 34px 20px;
+  }
+}
+.review .review-comments h5 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 23px;
+}
+.review .review-comments .review-comments-form {
+  border: 1px solid #ededed;
+  border-radius: 3px;
+}
+.review .review-comments .review-comments-form .review-comments-group {
+  display: flex;
+  padding: 6px 10px 12px 10px;
+  gap: 8px;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-comments .review-comments-form .review-comments-group {
+    flex-wrap: wrap;
+  }
+}
+.review .review-comments .review-comments-form .review-comments-input,
+.review .review-comments .review-comments-form label {
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-comments .review-comments-form .review-comments-input,
+  .review .review-comments .review-comments-form label {
+    width: 100%;
+  }
+}
+.review .review-comments .review-comments-form .review-comments-input {
+  padding: 6px 20px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.review .review-comments .review-comments-form .review-comments-input::-moz-placeholder {
+  color: #5f5f5f;
+}
+.review .review-comments .review-comments-form .review-comments-input::placeholder {
+  color: #5f5f5f;
+}
+.review .review-comments .review-comments-form .review-comments-input:focus-visible {
+  border: 1px solid #5f5f5f;
+}
+.review .review-comments .review-comments-form .review-comments-img {
+  position: relative;
+  width: 70px;
+  background-image: url("../assets/image/camera-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-comments .review-comments-form .review-comments-img {
+    width: 100%;
+    height: 35px;
+  }
+}
+.review .review-comments .review-comments-form textarea {
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  resize: both;
+}
+.review .review-comments .review-comments-form textarea::-moz-placeholder {
+  color: #5f5f5f;
+}
+.review .review-comments .review-comments-form textarea::placeholder {
+  color: #5f5f5f;
+}
+.review .review-comments .review-comments-form textarea:focus-visible {
+  outline: 1px solid #5f5f5f;
+}
+.review .review-comments .review-comments-form .review-comments-submit {
+  padding: 6px 23px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .review .review-comments .review-comments-form .review-comments-submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#fhm-product-detail {
+  margin-top: 81px;
+  margin-bottom: 90px;
+}
+
+#fhm-product-detail-recent {
+  margin-bottom: 156px;
+}

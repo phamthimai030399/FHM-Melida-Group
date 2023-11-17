@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC\ Caslon\ 224\ Std/ITC Caslon 224 Std Book.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC\ Caslon\ 224\ Std/ITC Caslon 224 Std Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC\ Caslon\ 224\ Std/ITC Caslon 224 Std Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// START FONT VARIABLES
+$font-manrope: "Manrope", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+$font-ITC: "ITC", serif;
+$font-extralight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+// END FONT VARIABLES
+
+// START COLOR VARIABLES
+$black: #000000;
+$white: #ffffff;
+$line-color: #d9d9d9;
+$nobel: #969595;
+$dark-charcoal: #333333;
+$mercury: #e6e6e6;
+$grey-96: #606060;
+$grey-95: #f2f2f2;
+$grey-93: #ededed;
+$grey-89: #e3e3e3;
+$grey-87: #dedede;
+$grey-88: #e0e0e0;
+$grey-76: #c2c2c2;
+$grey-50: #727272;
+$grey-38: #616161;
+$grey-27: #454545;
+$bright-grey: #e9e9e9;
+$light-grey: #efefef;
+$sliver: #c8c8c8;
+$smoke: #f9f9f9;
+$dim-grey: #686868;
+$granite-grey: #5f5f5f;
+$spanish-grey: #939393;
+$red: #ff0000;
+$whisper: #eeeeee;
+// END COLOR VARIABLES
+
+// START BREAKPOINT VARIABLES
+@mixin extra-desktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+// END BREAKPOINT VARIABLES

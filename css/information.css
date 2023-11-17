@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.information {
+  margin-top: 60px;
+}
+@media only screen and (max-width: 767px) {
+  .information {
+    margin-top: 10px;
+  }
+}
+.information .information-toggle-button {
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 8px 32px;
+  display: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media only screen and (max-width: 767px) {
+  .information .information-toggle-button {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .information .information-side {
+    padding-right: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    padding: 80px 10.5px 0;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    transform: translateX(-100%);
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+  }
+  .information .information-side.active {
+    transform: translateX(0%);
+  }
+}
+.information .information-side .information-side-close {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .information .information-side .information-side-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10.5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+.information .information-nav .information-nav-item {
+  margin-bottom: 10px;
+}
+.information .information-nav .information-nav-link {
+  padding: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.information .information-nav .information-nav-link.active {
+  font-weight: 800;
+}
+@media only screen and (max-width: 767px) {
+  .information .information-nav .information-nav-link {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+.information .information-nav .information-nav-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ededed;
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.information .information-container {
+  margin-top: 33px;
+  margin-bottom: 143px;
+}
+.information .information-container .information-group {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 45px;
+}
+.information .information-container h2 {
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 13px;
+  position: relative;
+  margin-bottom: 36px;
+}
+.information .information-container h2::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.information .information-container h4 {
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.information .information-container h5 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.information .information-container p {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.information .information-container ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+.information .information-container ol li {
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.information .information-container .information-address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.information .information-container .information-address svg {
+  padding-right: 37px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+}
+.information .information-container .information-address .information-address-line {
+  height: 47px;
+  width: 1px;
+  background-color: #c2c2c2;
+  margin-right: 40px;
+}
+.information .information-container .information-address .information-address-content {
+  max-width: 298px;
+}
+.information .information-container .information-address .information-address-content h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.information .information-container .information-address .information-address-content p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.information .information-container .information-contact {
+  max-width: 580px;
+}

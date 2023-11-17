@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ITC";
+  src: url("../assets/fonts/ITC Caslon 224 Std/ITC Caslon 224 Std Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.notfound {
+  margin-top: 87px;
+  padding-bottom: 176px;
+  width: 100%;
+  flex-direction: column;
+}
+@media only screen and (max-width: 991px) {
+  .notfound {
+    margin-top: 30px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .notfound {
+    margin-top: 20px;
+    padding-bottom: 80px;
+  }
+}
+.notfound svg {
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .notfound svg {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .notfound svg {
+    width: 80%;
+    margin-bottom: 0;
+  }
+}
+.notfound h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #969595;
+  margin-bottom: 40px;
+  max-width: 712px;
+}
+@media only screen and (max-width: 991px) {
+  .notfound h1 {
+    font-size: 36px;
+    max-width: 61%;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .notfound h1 {
+    font-size: 28px;
+    max-width: none;
+    margin-bottom: 15px;
+  }
+}
+.notfound a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 118px;
+}
+@media only screen and (max-width: 991px) {
+  .notfound a {
+    padding: 15px 48px;
+  }
+}
