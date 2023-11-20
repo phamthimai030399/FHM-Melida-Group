@@ -1,0 +1,25 @@
+/* LIST PRODUCT  */
+#fhm-list-product {
+  margin-top: 100px;
+}
+#fhm-list-product .tabs-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#fhm-list-product .tabs-list .tabs-item {
+  padding: 10px 20px;
+}
+#fhm-list-product .tabs-list .tabs-item .text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+#fhm-list-product .tabs-list .tabs-item .text.active,
+#fhm-list-product .tabs-list .tabs-item .text:hover {
+  color: #98ca1d;
+}   
+#fhm-list-product .tabs-list .tabs-item .text.active {
+    border-bottom: 2px solid #98ca1d;
+}

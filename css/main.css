@@ -1,5 +1,6 @@
 @import "../css/home.css";
 @import "../css/information.css";
+@import "../css/list-product.css";
 * {
   margin: 0;
   padding: 0;
@@ -951,7 +952,7 @@ h3 {
   }
 }
 
-.list .list-container {
+.list-product-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 26px;
@@ -959,14 +960,14 @@ h3 {
   row-gap: 57px;
 }
 @media only screen and (max-width: 991px) {
-  .list .list-container {
+  .list-product-container {
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 15px;
     column-gap: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .list .list-container {
+  .list-product-container {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 10px;
     column-gap: 10px;
