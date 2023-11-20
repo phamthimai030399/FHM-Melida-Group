@@ -1,4 +1,5 @@
 @import "../css/home.css";
+@import "../css/information.css";
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +56,7 @@ a:focus-visible {
 }
 
 a:hover {
-  color: #98CA1D;
+  color: #98ca1d;
   transition: all 0.5s ease;
 }
 
@@ -186,9 +187,9 @@ h3 {
   line-height: 1.5em;
   font-weight: 500;
   color: #ffffff;
-  background-color: #98CA1D;
+  background-color: #98ca1d;
   border-radius: 3px;
-  border: 1px solid #98CA1D;
+  border: 1px solid #98ca1d;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
@@ -824,7 +825,7 @@ h3 {
   -webkit-line-clamp: 2;
 }
 .product .product-info .product-name:hover {
-  color: #98CA1D;
+  color: #98ca1d;
 }
 .product:hover .product-img {
   box-shadow: 2px rgba(0.4, 0.4, 0.4, 0.4);
@@ -1351,14 +1352,43 @@ h3 {
 .related .related-container {
   margin-top: 57px;
 }
-
+.banner {
+  position: relative;
+}
 .banner .banner-img {
   width: 100%;
-  height: 275x;
+  aspect-ratio: 1600/480;
 }
 .banner .banner-img img {
   -o-object-position: center;
   object-position: center;
+}
+.banner .banner-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .banner-content span {
+  color: #004e94;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.banner .banner-content h2 {
+  color: #004e94;
+  font-size: 56px;
+  font-weight: 800;
+}
+@media (max-width: 767px) {
+  .banner .banner-content {
+    display: none;
+  }
 }
 
 .breadcrumb {
@@ -1380,6 +1410,9 @@ h3 {
   color: #616161;
   padding: 10px;
   white-space: nowrap;
+}
+.breadcrumb .breadcrumb-link:last-child {
+  font-weight: 700;
 }
 .breadcrumb .breadcrumb-link-current {
   color: #000000;
@@ -1411,7 +1444,7 @@ h3 {
 }
 .newsletter .newsletter-container {
   width: 50%;
-  background-color: #01559B;
+  background-color: #01559b;
   padding-left: calc((100% - 1160px) / 2 - 51px);
   padding-right: 135px;
   padding-top: 80px;
@@ -1534,7 +1567,7 @@ h3 {
 .newsletter .newsletter-container .newsletter-form .newsletter-form-btn {
   border: none;
   border-radius: 0 5px 5px 0;
-  color: #01559B;
+  color: #01559b;
   background-color: #ffffff;
   font-size: 16px;
   line-height: 30px;
@@ -2202,7 +2235,13 @@ h3 {
 .header .mega-menu .mega-menu-main .mega-menu-list .mega-menu-col li:hover {
   padding-left: 15px;
 }
-.header .mega-menu .mega-menu-main .mega-menu-list .mega-menu-col li:hover .nav-item {
+.header
+  .mega-menu
+  .mega-menu-main
+  .mega-menu-list
+  .mega-menu-col
+  li:hover
+  .nav-item {
   color: #98ca1d;
 }
 .header .mega-menu .mega-menu-main .mega-menu-side {
@@ -2276,9 +2315,6 @@ h3 {
   font-weight: 300;
   margin-bottom: 12px;
   transition: all 0.5s ease-in-out;
-}
-.footer .footer-main .footer-element ul a:hover {
-  text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
   .footer .footer-main .footer-element .footer-grid {

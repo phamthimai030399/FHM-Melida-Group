@@ -134,10 +134,10 @@ const swiperTopbar = new Swiper(".header-topbar-slider", {
   loop: true,
   speed: 1000,
   slidesPerView: 1,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
 });
 
 const swiperRelated = new Swiper(".related-slider", {
@@ -170,11 +170,3 @@ const swiperRelated = new Swiper(".related-slider", {
   },
 });
 
-// close quick view when click add to cart
-const close = document.querySelector(".quickview-close");
-const quickviewPopup = new bootstrap.Modal(
-  document.getElementById("fhm-quickview-popup")
-);
-close.addEventListener("click", () => {
-  quickviewPopup.hide();
-});

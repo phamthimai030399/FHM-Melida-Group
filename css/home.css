@@ -349,65 +349,6 @@ button.view-all:hover {
   }
 }
 
-.video {
-  width: 100%;
-  aspect-ratio: 1600/690;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 91px;
-}
-@media only screen and (max-width: 767px) {
-  .video {
-    margin-bottom: 70px;
-  }
-}
-.video video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.video .video-thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.5s ease;
-}
-.video .video-thumbnail .video-play {
-  position: absolute;
-  top: 42%;
-  left: 48%;
-  right: auto;
-  z-index: 10;
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media only screen and (max-width: 767px) {
-  .video .video-thumbnail .video-play {
-    top: 38%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .video .video-thumbnail .video-play {
-    top: 30%;
-    left: 42%;
-  }
-}
-.video .video-thumbnail.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .overview {
   position: relative;
 }

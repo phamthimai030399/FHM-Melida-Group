@@ -1,18 +1,36 @@
-// Toggle mobile filter
-const openNavButton = document.querySelector(
-  "#fhm-information .information-toggle-button"
-);
-
-const closeNavButton = document.querySelector(
-  "#fhm-information .information-side-close"
-);
-
-const navList = document.querySelector("#fhm-information .information-side");
-
-openNavButton.addEventListener("click", () => {
-  navList.classList.add("active");
+const swiperValue= new Swiper(".value-slider", {
+  loop:true,
+  direction: "horizontal",
+  slidesPerView: 2,
+  spaceBetween: 35,
+  scrollbar: {
+    el: ".swiper-scrollbar"
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+  },
 });
 
-closeNavButton.addEventListener("click", () => {
-  navList.classList.remove("active");
+const play = document.querySelector(".button-play");
+const video = document.querySelector("video");
+play.addEventListener("click", () => {
+  document.querySelector(".video-thumbnail").classList.add("hidden");
+  video.play();
+});
+
+const swiperOurStaff= new Swiper(".our-staff-slider", {
+  loop:true,
+  direction: "horizontal",
+  slidesPerView: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      autoplay: false,
+      slidesPerView: 4,
+      spaceBetween: 26,
+    },
+  },
 });
