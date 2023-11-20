@@ -54,6 +54,11 @@ a:focus-visible {
   outline: none;
 }
 
+a:hover {
+  color: #98CA1D;
+  transition: all 0.5s ease;
+}
+
 h1,
 h2,
 h3,
@@ -813,14 +818,16 @@ h3 {
   color: #000000;
   font-weight: 800;
   margin-bottom: 15px;
-  text-transform: uppercase;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
 }
 .product .product-info .product-name:hover {
-  color: #1a1a1a;
+  color: #98CA1D;
+}
+.product:hover .product-img {
+  box-shadow: 2px rgba(0.4, 0.4, 0.4, 0.4);
 }
 .product .product-info .product-des {
   color: #616161;
@@ -1404,10 +1411,11 @@ h3 {
 }
 .newsletter .newsletter-container {
   width: 50%;
-  background-color: #000000;
+  background-color: #01559B;
   padding-left: calc((100% - 1160px) / 2 - 51px);
   padding-right: 135px;
   padding-top: 80px;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 1399px) {
   .newsletter .newsletter-container {
@@ -1490,7 +1498,7 @@ h3 {
 .newsletter .newsletter-container .newsletter-form {
   overflow: hidden;
   border-radius: 5px;
-  padding: 15px 59px;
+  padding: 10px 59px;
   background-color: transparent;
   border: 1px solid #ffffff;
   position: relative;
@@ -1505,12 +1513,12 @@ h3 {
 }
 .newsletter .newsletter-container .newsletter-form input {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 40px;
   color: #ffffff;
   background-color: transparent;
   border: none;
   padding: 0;
-  width: calc(100% - 100px);
+  width: calc(100% - 120px);
 }
 .newsletter .newsletter-container .newsletter-form input:focus-visible {
   outline: none;
@@ -1526,9 +1534,9 @@ h3 {
 .newsletter .newsletter-container .newsletter-form .newsletter-form-btn {
   border: none;
   border-radius: 0 5px 5px 0;
-  color: #000000;
+  color: #01559B;
   background-color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   padding: 16px 28px;
@@ -1888,6 +1896,16 @@ h3 {
   transition: all 0.5s ease;
   padding: 10px 0;
 }
+.header .header-main .header-nav .nav-item:hover {
+  color: #98ca1d;
+}
+.header .header-main .header-nav .nav-list {
+  display: flex;
+  gap: 100px;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  margin-left: 59px;
+}
 .header .header-main .header-nav .nav-list {
   display: flex;
   gap: 100px;
@@ -2183,6 +2201,9 @@ h3 {
 }
 .header .mega-menu .mega-menu-main .mega-menu-list .mega-menu-col li:hover {
   padding-left: 15px;
+}
+.header .mega-menu .mega-menu-main .mega-menu-list .mega-menu-col li:hover .nav-item {
+  color: #98ca1d;
 }
 .header .mega-menu .mega-menu-main .mega-menu-side {
   flex: 0 1 293px;
