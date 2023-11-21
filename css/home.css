@@ -342,7 +342,7 @@ button.view-all:hover {
 @media only screen and (max-width: 480px) {
   .collection
     .collection-item.collection-item-center
-    .collection-item-content
+    .collection-item-content#fhm-testimonial::after
     .collection-item-btn
     a {
     padding: 10px 32px;
@@ -645,16 +645,6 @@ button.view-all:hover {
 /* HOME TESTIMONIAL */
 #fhm-testimonial {
   padding-bottom: 120px;
-  position: relative;
-  /* background: url(../assets/image/bg-news.png);
-  background-size: cover; */
-}
-#fhm-testimonial::after {
-  content: url(../assets/image/bg-news.png);
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  position: absolute;
 }
 #fhm-testimonial .section-content p {
   color: #575757;

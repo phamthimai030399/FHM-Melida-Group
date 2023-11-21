@@ -23,3 +23,26 @@
 #fhm-list-product .tabs-list .tabs-item .text.active {
     border-bottom: 2px solid #98ca1d;
 }
+#fhm-list-product .product-list-pagination {
+  text-align: center;
+  margin-top: 80px;
+}
+#fhm-list-product .product-list-pagination .product-list-pagination-page {
+  gap: 10px;
+}
+#fhm-list-product .product-list-pagination .product-list-pagination-page span {
+  font-size: 16px;
+  font-weight: 600;
+}
+#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  width: 26px;
+  height: 26px;
+}
+#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button:hover,
+#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button.active{
+  background: #98ca1d;
+}
