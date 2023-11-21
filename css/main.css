@@ -1,6 +1,7 @@
 @import "../css/home.css";
 @import "../css/information.css";
 @import "../css/list-product.css";
+@import "../css/product-detail.css";
 * {
   margin: 0;
   padding: 0;
@@ -998,20 +999,26 @@ h3 {
   height: 100%;
   overflow-y: auto;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 .gallery .gallery-thumbnail .gallery-thumbnail-item {
-  width: 78px;
-  height: 78px;
-  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
+}
+.gallery .gallery-thumbnail .gallery-thumbnail-item.active {
+ border: 1px solid #98ca1d;
 }
 .gallery .gallery-thumbnail .gallery-thumbnail-item .gallery-thumbnail-img {
   transition: all 0.5s ease;
   opacity: 0.6;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
 }
 .gallery .gallery-thumbnail .gallery-thumbnail-item::after {
   content: "";
@@ -1059,24 +1066,33 @@ h3 {
 @media only screen and (max-width: 991px) {
   .gallery .gallery-thumbnail {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gallery .gallery-thumbnail {
     gap: 10px;
-    overflow-x: auto;
   }
 }
 .gallery .gallery-view {
   width: 515px;
-  aspect-ratio: 515/751;
   overflow: hidden;
   position: relative;
+  padding: 5%;
 }
 @media only screen and (max-width: 1199px) {
   .gallery .gallery-view {
     width: 400px;
+    padding: 5% 0;
   }
 }
 @media only screen and (max-width: 991px) {
   .gallery .gallery-view {
     width: 100%;
+    aspect-ratio: 1/1;
+    padding: 9%;
   }
 }
 .gallery .gallery-view video {
@@ -1102,10 +1118,16 @@ h3 {
     width: 100%;
   }
 }
+@media only screen and (max-width: 480px) {
+  .gallery .gallery-thumbnail .gallery-thumbnail-item .gallery-thumbnail-img {
+    padding: 15% 0;
+  }
+}
 
 .detail .detail-container {
   justify-content: space-between;
   gap: 45px;
+  align-items: center;
 }
 @media only screen and (max-width: 1199px) {
   .detail .detail-container {
@@ -1169,7 +1191,6 @@ h3 {
   width: 100%;
 }
 .detail .detail-info {
-  border-bottom: 1px solid #efefef;
   margin-bottom: 20px;
 }
 .detail .detail-info .detail-info-heading .product-type {
@@ -1178,10 +1199,12 @@ h3 {
 }
 .detail .detail-info .detail-info-heading .product-name {
   font-size: 28px;
-  font-family: "Manrope", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   line-height: 1.5;
+  margin-top: 5px;
+}
+.detail .detail-info .detail-info-heading .product-name:hover {
+  color: #000000;
 }
 .detail .detail-info .detail-info-rating {
   margin-top: 17px;
@@ -1197,6 +1220,9 @@ h3 {
     flex-wrap: nowrap;
     align-items: start;
   }
+  .detail .detail-right {
+    margin-top: 50px;
+  } 
 }
 .detail .detail-info .detail-info-rating .detail-info-rating-item {
   gap: 8px;
@@ -1243,7 +1269,7 @@ h3 {
   margin-right: 10px;
 }
 .detail .detail-info .detail-info-price {
-  margin: 20px 0;
+  margin-bottom: 15px;
 }
 .detail .detail-info .detail-info-price .product-price {
   margin-bottom: 20px;
@@ -1252,6 +1278,35 @@ h3 {
   font-size: 24px;
   line-height: 33px;
   font-weight: 800;
+}
+.detail .detail-info .product-content p {
+  color: #575757;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.24px;
+}
+.detail .detail-info .share-social {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.detail .detail-info .share-social span {
+font-size: 18px;
+font-weight: 600;
+}
+.detail .detail-info .share-social .social-svg {
+  display: flex;
+  display: inline-flex;
+  padding: 7px 25px;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 4px;
+  border: 1px solid #98ca1d;
+}
+.detail .detail-info .share-social {
+  margin-top: 30px;
 }
 .detail .detail-variant {
   padding-bottom: 20px;
@@ -2291,7 +2346,7 @@ h3 {
 
 .footer {
   padding: 100px 0;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 @media only screen and (max-width: 991px) {
   .footer {

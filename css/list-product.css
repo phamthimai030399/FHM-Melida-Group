@@ -1,10 +1,12 @@
 /* LIST PRODUCT  */
 #fhm-list-product {
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 #fhm-list-product .tabs-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 #fhm-list-product .tabs-list .tabs-item {
@@ -19,9 +21,9 @@
 #fhm-list-product .tabs-list .tabs-item .text.active,
 #fhm-list-product .tabs-list .tabs-item .text:hover {
   color: #98ca1d;
-}   
+}
 #fhm-list-product .tabs-list .tabs-item .text.active {
-    border-bottom: 2px solid #98ca1d;
+  border-bottom: 2px solid #98ca1d;
 }
 #fhm-list-product .product-list-pagination {
   text-align: center;
@@ -34,7 +36,10 @@
   font-size: 16px;
   font-weight: 600;
 }
-#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button {
+#fhm-list-product
+  .product-list-pagination
+  .product-list-pagination-page
+  .product-list-pagination-page-button {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -42,7 +47,38 @@
   width: 26px;
   height: 26px;
 }
-#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button:hover,
-#fhm-list-product .product-list-pagination .product-list-pagination-page .product-list-pagination-page-button.active{
+#fhm-list-product
+  .product-list-pagination
+  .product-list-pagination-page
+  .product-list-pagination-page-button:hover,
+#fhm-list-product
+  .product-list-pagination
+  .product-list-pagination-page
+  .product-list-pagination-page-button.active {
   background: #98ca1d;
+}
+#fhm-list-product .shopping-guide {
+  margin-top: 100px;
+}
+#fhm-list-product .shopping-guide .line {
+  height: 1px;
+  width: 150px;
+  background: #000;
+}
+#fhm-list-product .shopping-guide h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+#fhm-list-product .shopping-guide p {
+  color: #575757;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.24px;
+}
+@media (max-width: 575px) {
+  #fhm-list-product .tabs-list .tabs-item {
+    padding: 10px 5px;
+  }
 }
