@@ -956,21 +956,32 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 26px;
-  column-gap: 40px;
+  column-gap: 50px;
   row-gap: 57px;
 }
 @media only screen and (max-width: 991px) {
   .list-product-container {
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 15px;
-    column-gap: 15px;
+    column-gap: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
   .list-product-container {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 10px;
-    column-gap: 10px;
+    column-gap: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .product .product-info .product-name {
+    font-size: 16px;
+  }
+  .product .product-info .product-price .product-price-current {
+    font-size: 18px;
+  }
+  .product .product-info .product-price .product-price-old {
+    font-size: 14px;
   }
 }
 
@@ -2280,6 +2291,7 @@ h3 {
 
 .footer {
   padding: 100px 0;
+  background: #F9F9F9;
 }
 @media only screen and (max-width: 991px) {
   .footer {
