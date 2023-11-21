@@ -3,6 +3,7 @@
 @import "../css/list-product.css";
 @import "../css/product-detail.css";
 @import "../css/news-blog.css";
+@import "../css/news-detail.css";
 * {
   margin: 0;
   padding: 0;
