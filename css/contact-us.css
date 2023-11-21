@@ -1,90 +1,115 @@
-@import "../assets/fonts/Manrope/";
-.contact {
-  margin-top: 58px;
-  margin-bottom: 148px;
+#fhm-contact-us {
+  margin-top: 100px;
 }
-@media only screen and (max-width: 991px) {
-  .contact {
-    margin-bottom: 100px;
-  }
-}
-.contact .contact-form .contact-form-heading {
-  margin-top: 52px;
-  margin-bottom: 25px;
-}
-.contact .contact-form .contact-form-heading p,
-.contact .contact-form .contact-form-heading span {
-  font-weight: 300;
-  font-size: 14px;
-}
-.contact .contact-form .contact-form-submit {
-  margin-top: 50px;
-}
-
-.address {
-  margin-bottom: 148px;
-}
-@media only screen and (max-width: 991px) {
-  .address {
-    margin-bottom: 100px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .address {
-    margin-bottom: 50px;
-  }
-}
-.address .address-container {
+#fhm-contact-us .contact-us-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+#fhm-contact-us .contact-us-container .contact-content,
+#fhm-contact-us .contact-us-container .contact-form {
+  width: 47%;
+}
+#fhm-contact-us .contact-us-container h3 {
+  text-align: start;
+  margin-bottom: 10px;
+}
+#fhm-contact-us .contact-us-container p {
+  color: #575757;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.24px;
+}
+#fhm-contact-us .contact-us-container .contact-form {
+  display: inline-flex;
+  padding: 60px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+#fhm-contact-us .contact-us-container .contact-form .title-top-form {
+  margin-top: 12px;
+  display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 767px) {
-  .address .address-container {
-    flex-direction: column-reverse;
-  }
+#fhm-contact-us .contact-us-container .contact-form .main-form {
+  margin-top: 20px;
 }
-.address .address-info {
-  max-width: 362px;
+.col-group {
+  display: flex;
+  gap: 16px;
 }
-.address .address-info .address-info-item {
-  margin-bottom: 30px;
+#fhm-contact-us .main-form .main-form-control:focus-visible {
+  border: 1px solid #ededed;
 }
-@media only screen and (max-width: 991px) {
-  .address .address-info .address-info-item {
-    margin-bottom: 20px;
-  }
+
+/* CONTACT US ADDRESS */
+#fhm-contact-us-address {
+  margin-top: 100px;
+  aspect-ratio: 1600/460;
 }
-.address .address-info .address-info-item h5 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.address .address-info .address-info-item a {
-  text-decoration: underline;
-}
-.address .address-info .address-info-item p,
-.address .address-info .address-info-item a {
-  font-size: 16px;
-  font-weight: 300;
-}
-.address .address-frame {
-  width: 50%;
-  aspect-ratio: 580/315;
-}
-@media only screen and (max-width: 991px) {
-  .address .address-frame {
-    aspect-ratio: 580/450;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .address .address-frame {
-    width: 100%;
-    aspect-ratio: 580/315;
-    margin-bottom: 30px;
-  }
-}
-.address .address-frame iframe {
+#fhm-contact-us-address iframe {
   width: 100%;
-  height: 100%;
+}
+
+/* CONTACT CHANNEL */
+#fhm-contact-channel {
+  margin-top: 100px;
+}
+#fhm-contact-channel .contact-channel-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  padding: 35px 70px;
+}
+#fhm-contact-channel .contact-channel-container .item-contact-channel {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 250px;
+}
+#fhm-contact-channel .contact-channel-container .item-contact-channel span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+#fhm-contact-channel .contact-channel-container .item-contact-channel p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  letter-spacing: 0.024px;
+}
+@media (max-width: 991px) {
+  #fhm-contact-us .contact-us-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #fhm-contact-us .contact-us-container .contact-content, #fhm-contact-us .contact-us-container .contact-form {
+    width: 100%;
+}
+#fhm-contact-us .contact-us-container .contact-form .title-top-form,
+#fhm-contact-us .contact-us-container .contact-form .main-form {
+  width: 100%;
+}
+}
+@media (max-width: 575px) {
+  #fhm-contact-us .contact-us-container .contact-form {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 480px) {
+  #fhm-contact-channel .contact-channel-container {
+    padding: 35px;
+  }
 }
